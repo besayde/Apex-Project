@@ -24,21 +24,20 @@ def add_cost(costs: list[float], cost: float) -> List:
     costs.append(cost)
     return costs
 
-def calcular_total(costs:list)--> float:
+def calcular_total(costs:list) --> float:
     """
     Sum all the expenses in a list
     
-    Args: we have to get access to the elements in the list and then sum them into a variable.
+    Args: costs (list): Lista con los costos a sumar.
     
-    Return: the sum of the list (float)
+    Returns: The sum of the List (float)
     """
      #Create the sum variable
-     sums = 0
+     sums = 0.0
      # Get access to all the elements of the input and sum them with the variable
      for elements in costs:
          sums += elements
      #Return the sums's value
-
       return sums
 
 def dividir_entre_amigos(sums:float, num_personas:int) -> float:
